@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.js": "/incora-task/static/js/main.2f16faf0.js",
+    "main.js": "/incora-task/static/js/main.3376a7e1.js",
     "static/js/421.053280e5.chunk.js": "/incora-task/static/js/421.053280e5.chunk.js",
     "static/js/480.c47afa24.chunk.js": "/incora-task/static/js/480.c47afa24.chunk.js",
     "static/js/767.3419b559.chunk.js": "/incora-task/static/js/767.3419b559.chunk.js",
     "static/js/193.0462cda0.chunk.js": "/incora-task/static/js/193.0462cda0.chunk.js",
     "static/js/443.13084d08.chunk.js": "/incora-task/static/js/443.13084d08.chunk.js",
-    "static/js/335.9ab05a23.chunk.js": "/incora-task/static/js/335.9ab05a23.chunk.js",
+    "static/js/335.57758252.chunk.js": "/incora-task/static/js/335.57758252.chunk.js",
     "static/js/722.8da93e96.chunk.js": "/incora-task/static/js/722.8da93e96.chunk.js",
     "static/js/924.c95ab345.chunk.js": "/incora-task/static/js/924.c95ab345.chunk.js",
     "static/js/306.b0d5c13d.chunk.js": "/incora-task/static/js/306.b0d5c13d.chunk.js",
     "static/js/130.a93cb4cd.chunk.js": "/incora-task/static/js/130.a93cb4cd.chunk.js",
     "index.html": "/incora-task/index.html",
-    "main.2f16faf0.js.map": "/incora-task/static/js/main.2f16faf0.js.map",
+    "main.3376a7e1.js.map": "/incora-task/static/js/main.3376a7e1.js.map",
     "421.053280e5.chunk.js.map": "/incora-task/static/js/421.053280e5.chunk.js.map",
     "480.c47afa24.chunk.js.map": "/incora-task/static/js/480.c47afa24.chunk.js.map",
     "767.3419b559.chunk.js.map": "/incora-task/static/js/767.3419b559.chunk.js.map",
     "193.0462cda0.chunk.js.map": "/incora-task/static/js/193.0462cda0.chunk.js.map",
     "443.13084d08.chunk.js.map": "/incora-task/static/js/443.13084d08.chunk.js.map",
-    "335.9ab05a23.chunk.js.map": "/incora-task/static/js/335.9ab05a23.chunk.js.map",
+    "335.57758252.chunk.js.map": "/incora-task/static/js/335.57758252.chunk.js.map",
     "722.8da93e96.chunk.js.map": "/incora-task/static/js/722.8da93e96.chunk.js.map",
     "924.c95ab345.chunk.js.map": "/incora-task/static/js/924.c95ab345.chunk.js.map",
     "306.b0d5c13d.chunk.js.map": "/incora-task/static/js/306.b0d5c13d.chunk.js.map",
     "130.a93cb4cd.chunk.js.map": "/incora-task/static/js/130.a93cb4cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2f16faf0.js"
+    "static/js/main.3376a7e1.js"
   ]
 }
