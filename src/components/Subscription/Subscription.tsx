@@ -1,48 +1,56 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchTreiler } from '../../fetchApi/fetchApi';
+import { fetchTrailer } from '../../fetchApi/fetchApi';
 import { toast } from 'react-hot-toast';
-import { TreilerBox } from './Subsription.styled';
+import { TrailerBox } from './Subsription.styled';
 import ReactPlayer from 'react-player';
+import Loader from '../Loader';
 
 
 
 
 export function StreamingService() {
-    const [treiler, setTreiler] = useState<{ [key: string]: string | any } | null>(null);
+    const [trailer, setTrailer] = useState<{ [key: string]: string | any } | null>(null);
     const { moviesId } = useParams();
-    const url = 'https://www.youtube.com/watch?v=' + treiler;
+    const [loading, setLoading] = useState<boolean>(false);
+
+    const url = 'https://www.youtube.com/watch?v=' + trailer;
 
 
     useEffect(() => {
-        fetchTreiler(moviesId).then(data => {
+        setLoading(true);
+
+        fetchTrailer(moviesId).then(data => {
             const { data: { results } } = data;          
 
 
-            setTreiler(results[0].key);
+            setTrailer(results[0].key);
             
         })
             .catch(error => {
                 console.log('Whoops, something went wrong...', error);
                 return toast.error('There are no treilers...');
             })
+        
+            .finally(() => setTimeout(() => {
+                setLoading(false);
+            }, 1500));
+        
     }, [moviesId]);
 
     return (
         <>
-        {treiler && (
-             <TreilerBox>
+        {trailer && (
+             <TrailerBox>
+                {loading && <Loader />}
                         <ReactPlayer
                             url={url}
                             controls
                         />
-            </TreilerBox>    
+            </TrailerBox>    
         )}
         </>
         
     )
-
-
-
 
 }

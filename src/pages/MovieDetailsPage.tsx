@@ -2,11 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import { useParams, useLocation, Outlet } from "react-router-dom";
 import { fetchMovieById } from '../fetchApi/fetchApi';
 import { Toaster, toast } from 'react-hot-toast';
-import Loader from '../components/Loader';
 import { Main, Box, Div1, Div2, Img, LinkStyled, Button, LinkStyledAddIn, Uldet } from './MovieDetailsPage.styled';
 import { FaArrowLeft } from 'react-icons/fa';
 import { noPosterImg } from './HomePage';
 import { StreamingService } from '../components/Subscription/Subscription';
+import Loader from '../components/Loader';
 
 
 export function MovieDetailsPage() {
@@ -72,7 +72,7 @@ export function MovieDetailsPage() {
                     </Div1>
                     <Div2>
                     <h1>{movie.title ? movie.title : movie.name}</h1>
-                    <p>User Score: {movie.vote_average * 10}%</p>
+                    <p>User Score: {Math.round(movie.vote_average) * 10}%</p>
                     <h2>Overview</h2>
                     <p>{movie.overview}</p>
                     <h3>Genres</h3>

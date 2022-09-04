@@ -15,7 +15,7 @@ export async function fetchMovieById(filmId) {
   return await axios.get(`${BASE_URL}/movie/${filmId}?api_key=${API_KEY}`);  
 };
 
-export async function fetchTreiler(filmId) {
+export async function fetchTrailer(filmId) {
   return await axios.get(`${BASE_URL}/movie/${filmId}/videos?api_key=${API_KEY}`);  
 };
 
